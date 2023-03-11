@@ -1,0 +1,26 @@
+.about {
+        text-align: center;
+
+        & h1 {
+                margin-top: 80px;
+        }
+
+        &_img {
+                margin-top: 20px;
+        }
+
+        &_p {
+                padding-top: 40px;
+                margin: 0 auto;
+                width: 590px;
+                line-height: 20px;
+        }
+
+        &_p2 {
+
+                padding-bottom: 101px;
+                margin: 0 auto;
+                width: 590px;
+                line-height: 20px;
+        }
+}

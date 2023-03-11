@@ -1,13 +1,20 @@
 import { Component } from 'react';
-
-import Header from '../main-header/main-header';
-
 import './app.scss';
 
+import Header from '../main-header/main-header';
+import About from '../main-about/main-about';
 
-export default App;
+
 
 class App extends Component {
-
+        render() {
+                return (
+                        <div className='app'>
+                                <Header />
+                                <About />
+                        </div>
+                )
+        }
 }
 
+export default App;

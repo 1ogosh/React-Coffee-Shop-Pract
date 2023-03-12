@@ -1,22 +1,27 @@
 .header {
         background: url('/../public/bg/Main-bg.jpg')center/cover no-repeat;
         height: 640px;
-        width: 100%;
-
+        min-width: 1440px;
+        &_img{
+                display: block;
+                position: absolute;
+                margin-top: -20px;
+                margin-left: 65px;
+        }
         &_nav {
                 &_ul {
                         padding-top: 52px;
                         display: flex;
 
                         &_li:first-child {
-                                margin-left: 5%;
+                                margin-left: 10%;
                         }
 
                         &_li {
                                 color: #fff;
                                 font-weight: 300;
                                 font-size: 15px;
-                                margin-left: 25px;
+                                margin-left: 5%;
                                 list-style-type: none;
                                 cursor: pointer;
                                 transition: 0.3s ease;

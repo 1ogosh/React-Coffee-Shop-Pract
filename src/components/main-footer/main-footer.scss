@@ -1,0 +1,41 @@
+.footer {
+        height: 150px;
+
+        &_nav {
+
+                margin-top: 52px;
+
+                &_ul {
+                        display: flex;
+                        justify-content: center;
+                        margin-right: 75px;
+
+                        &_li {
+                                display: flex;
+                                text-decoration: none;
+                                margin-left: 80px;
+                                cursor: pointer;
+                                transition: 0.3s ease;
+
+                                &:hover {
+                                        color: brown;
+                                }
+
+                                &_rect {
+                                        display: block;
+                                        position: relative;
+                                        height: 35px;
+                                        width: 35px;
+                                        bottom: 42px;
+                                        left: 85px;
+                                }
+                        }
+                }
+        }
+
+        &_img {
+                display: block;
+                margin: 0 auto;
+                margin-top: 30px;
+        }
+}

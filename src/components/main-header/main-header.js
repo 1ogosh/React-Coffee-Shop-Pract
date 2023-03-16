@@ -1,18 +1,26 @@
 
 import './main-header.scss';
+import {BrowserRouter as Router, Switch, Route, Link, NavLink} from 'react-router-dom';
 
 const Header = () => {
         return (
                 <div className="header">
-                        <div className="header_nav">
+                      <Router>
+                      <div className="header_nav">
                         
-                                <ul className='header_nav_ul'>
-                                <img className='header_img' src="/img/header_rect.svg" alt="" />
-                                        <li className='header_nav_ul_li'>Coffee house</li>
-                                        <li className='header_nav_ul_li'>Our coffee</li>
-                                        <li className='header_nav_ul_li'>For your pleasure</li>
-                                </ul>
-                        </div>
+                        <ul className='header_nav_ul'>
+                        <img className='header_img' src="/img/header_rect.svg" alt="" />
+                                <li className='header_nav_ul_li'><NavLink href="./">Coffee house</NavLink></li>
+                                <li className='header_nav_ul_li'><NavLink href="/">Our coffee</NavLink></li>
+                                <li className='header_nav_ul_li'><NavLink href="/">For your pleasure</NavLink></li>
+                        </ul>
+                </div>
+                <Switch>
+                        <Route path="../"></Route>
+                        <Route></Route>
+                        <Route></Route>
+                </Switch>
+                      </Router>
                         <div className="header_main">
                                 <h1>Everything You Love About Coffee</h1>
                                 <img className="header_main_img" src="/img/Vector.svg" alt="White" />
